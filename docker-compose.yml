@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  rjserver:
+    build: .
+    ports:
+      - "80:80"
+    networks:
+      - rjnet
+    restart: always
+    volumes:
+      - "./data:/data"
+
+networks:
+  rjnet:
+    name: rjnewsite_default
+
