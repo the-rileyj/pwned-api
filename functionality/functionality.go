@@ -12,7 +12,7 @@ import (
 	"os"
 	"time"
 
-	mailgun "gopkg.in/mailgun/mailgun-go.v1"
+	mailgun "github.com/mailgun/mailgun-go/v3"
 
 	"github.com/gin-gonic/gin"
 )
